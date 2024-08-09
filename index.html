@@ -19,6 +19,9 @@
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Enable compression for faster loading -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" as="style">
 </head>
 
 <body>
@@ -69,7 +72,7 @@
                             <div class="card">
                                 <div class="overflow-img">
                                     <a href="./balloon.html">
-                                        <img src="./assets/balloon.jpg" class="img-fluid" alt="">
+                                        <img src="./assets/balloon.jpg" class="img-fluid" alt="Balloon">
                                     </a>
                                 </div>
                                 <div class="card-body text-center px-1">
@@ -88,7 +91,7 @@
                             <div class="card">
                                 <div class="overflow-img">
                                     <a href="./davelle.html">
-                                        <img src="./assets/davelle.jpg" class="img-fluid" alt="">
+                                        <img src="./assets/davelle.jpg" class="img-fluid" alt="Food Run I">
                                     </a>
                                 </div>
                                 <div class="card-body text-center px-1">
@@ -107,7 +110,7 @@
                             <div class="card">
                                 <div class="overflow-img">
                                     <a href="canon.html">
-                                        <img src="./assets/canon.jpg" class="img-fluid" alt="">
+                                        <img src="./assets/canon.jpg" class="img-fluid" alt="New Camera!">
                                     </a>
                                 </div>
                                 <div class="card-body text-center px-1">
@@ -120,34 +123,29 @@
                                 </div>
                             </div>
                         </article>
-
-
-
                     </div>
-
                 </div>
         </section>
-
-
-        <!-- Swiper slider -->
-
-
     </main>
 
+    <!-- Preload key scripts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="main.js" as="script">
 
-
-    <!-- masonry libray for horizontal grid -->
+    <!-- Masonry library for horizontal grid -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
 
-    <!-- swiper slider cdn -->
+    <!-- Swiper slider cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
         integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
 
-    <!-- custom javascript main.js file -->
-    <script src="main.js"></script>
+    <!-- Custom JavaScript main.js file -->
+    <script src="main.js" defer></script>
+
 </body>
 
 </html>
